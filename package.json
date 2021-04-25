@@ -1,0 +1,25 @@
+{
+  "name": "product-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zubayr-dev/product-card.git"
+  },
+  "author": "Zubayr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zubayr-dev/product-card/issues"
+  },
+  "homepage": "https://github.com/Zubayr-dev/product-card#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}

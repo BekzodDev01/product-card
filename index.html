@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productCard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+<body>
+    <div class="container main">     
+    <div class="row">
+        <!-- Left side of product card -->
+          <div class="col-md-6 left-side">
+              <!-- Add images to <div class="fotorama"></div> -->
+   <div class="fotorama product-img"
+   data-nav="thumbs"
+   data-arrows="false"
+   data-swipe="false"
+   data-fit="none"
+   data-thumbwidth="42"
+   data-thumbheight="42"
+   data-thumbfit="contain"        
+   >
+    <img src="images/02.jpg">
+    <img src="images/01.png">
+    <img src="images/product1.png">
+    <img src="images/02.jpg">
+    <img src="images/01.png">
+    <img src="images/product1.png">
+    
+  </div>
+            <!-- <div class="row">
+                <div class="col-md-1 slider">
+                    slider
+                </div>
+                <div class="col-md-11 product-img">
+                    <img src="/images/02.png" alt="Product img" class="product-img__background">
+                </div>
+            </div> -->
+        </div>
+       <!--Right side of product card  -->
+          <div class="col-md-6 right-side">
+            <div class="aboutProduct">
+                <p class="aboutProduct__text">
+                    100% органический 10 лет корень корейского женьшеня красный Panax улучшить иммунную
+                </p>
+                <div class="productRating">
+                    <div class="productRating__stars">
+                        <img src="images/Frame.png" alt="Filled star"  class="productRating__stars--img-f">
+                        <img src="images/Frame.png" alt="Filled star"  class="productRating__stars--img-f">
+                        <img src="images/Frame.png" alt="Filled star"  class="productRating__stars--img-f">
+                        <img src="images/Frame 4.png" alt="Filled star"  class="productRating__stars--img-f">
+                        <img src="images/Frame 5.png" class="productRating__stars--img-f" alt="Star">
+                        <span>&nbsp; 243</span> 
+                        <span class="productRating__text">
+                            Количество заказов: 1
+                        </span>    
+                    </div>
+                    <div class="hr-line">&nbsp;</div>
+                </div>
+            </div>      
+        
+            <div class="payment">
+                <div class="payment__current">
+                <h2>
+                    15 000 000 сум
+                </h2></div>
+                <div class="payment__old">
+                    <h6>20 000 000 сум</h6>
+                    <span class="payment__discount">
+                        -25%
+                    </span>
+                </div>
+                <div class="peyment__method">
+                    <span> Методы оплаты: </span>
+                    <img src="images/Payme.png" alt="Logo 1" class="payment__method--logo">
+                    <img src="images/Humo.png" alt="Logo 2" class="payment__method--logo">
+                    <img src="images/Click.png" alt="Logo 3" class="payment__method--logo">
+                </div>
+                <div class="payment__delivery">
+                    <span>Методы доставки:</span>
+                    <span class="payment__delivery--wrapper">
+                        <img src="images/delivery.png" alt="img 1" class="payment__delivery--img">
+                        <span>Доставка продавца</span>
+                    </span>
+                    <span class="payment__delivery--wrapper">
+                        <img src="images/ad-product.png" alt="img 2" class="payment__delivery--img">
+                        <span>Самовывоз</span>
+                    </span>
+                </div>
+                <div class="hr-line">&nbsp;</div>
+
+            </div>
+            <div class="quantity">
+                <h6 class="quantity__header">Количество</h6> <br>
+                <div class="quantity__counter">
+                   <button class="quantity__counter--decrement" onclick="plusLess(event,'less')">
+                       <img src="images/minus.png" alt="minus">
+                    </button>
+                   <div class="quantity__counter--value" id="value">
+                    <input type="text" class="quantity__counter--value-input" readonly="readonly" value="1">
+                    </div>
+                   <button class="quantity__counter--increment" onclick="plusLess(event,'plus')">
+                       <img src="images/plus.png" alt="minus">
+                   </button> 
+                   <span class="quantity__badge">
+                       <img src="images/icon.png" alt="Icon" class="quantity__badge--icon">
+                       <span class="quantity__badge--text">в наличии 1 245  шт.</span>
+                   </span>
+                </div> 
+                <div class="quantity__btns">
+                    <button class="quantity__btns--1">
+                        Купить в один клик
+                    </button>
+                    <button class="quantity__btns--2">
+                        Связаться с продавцом
+                    </button>                        
+                </div>  
+                <div class="hr-line">&nbsp;</div>
+                 <div class="delivery-pricing">
+                     <p>* Стоимость доставки заказов до 40 000 сум  - договорная <br>
+                        ** Бесплатная доставка при заказе от 40 000 сум</p>
+                     
+                 </div>   
+            </div>
+
+
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
